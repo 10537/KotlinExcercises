@@ -6,23 +6,6 @@ import java.util.*
 //    Body
 //}
 
-fun Bubblesort(List: IntArray): IntArray {
-    var swap = true
-    while (swap){
-        swap = false
-        for (i in 1..List.size - 1){
-            if (List[i-1] > List[i]){
-                var tmp = List[i-1]
-                List[i-1] = List[i]
-                List[i] = tmp
-                swap = true
-            }
-        }
-
-    }
-    return List
-}
-
 fun PrintHello() {
     println("Hello Guys!!")
 }
@@ -60,7 +43,4 @@ fun main(args: Array<String>) {
     println(Z)
     println(X)
     println(Y)
-    var Numbers = intArrayOf(12, 45, 67, 1, 89, 8, 0, 333, 5, 78, 1000, 56)
-    Numbers = Bubblesort(Numbers)
-    for (i in Numbers) println(i)
 }
